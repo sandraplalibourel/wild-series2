@@ -1,0 +1,31 @@
+@import "~bootstrap/scss/bootstrap";
+
+$primary : #F7DAC4;
+$secondary : #C5C0C6;
+$hover : #929BB5;
+
+
+.navbar {
+    background-color: $primary;
+}
+
+.nav-link {
+    color: $secondary;
+}
+
+.nav-link:hover {
+    color: $hover;
+}
+
+.navbar-brand {
+    color: $secondary;
+}
+
+.navbar-brand:hover {
+    color: $hover;
+}
+
+.navbar-toggler-icon {
+    border: 2px solid $secondary;
+    color: $secondary;
+}
