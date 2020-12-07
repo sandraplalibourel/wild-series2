@@ -1,5 +1,5 @@
 {% extends 'base.html.twig' %}
-{% block title %}Category : {{ category.name }}{% endblock %}
+{% block title %}Catégorie : {{ category.name }}{% endblock %}
 
 {% block body %}
     <h1 class="mt-0">{{ category.name }}</h1>
@@ -8,15 +8,14 @@
             <li>
                 <h2>{{ program.title }}</h2>
                 <p>{{ program.summary }}</p>
-                {# Lien vers la fiche de la série : #}
-                <a href="{{ path("program_show", { id: program.id }) }}">Voir la fiche</a>
+                <a href="{{ path("program_show", { program_id : program.id }) }}">Voir la fiche</a>
             </li>
         </ul>
     {% else %}
-        No program find for this category.
+        Pas de programme pour cette catégorie.
     {% endfor %}
     <a href="{{ path('category_index') }}">
-        Go back to categories list
+        Retour à la liste des catégories.
     </a>
 
 {% endblock %}
