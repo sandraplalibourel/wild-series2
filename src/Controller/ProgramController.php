@@ -39,6 +39,8 @@ Class ProgramController extends AbstractController
      * The controller for the category add form
      *
      * @Route("/new", name="new")
+     * @param Request $request
+     * @return Response
      */
     public function new(Request $request) : Response
     {
