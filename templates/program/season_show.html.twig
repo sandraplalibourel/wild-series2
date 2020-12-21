@@ -16,7 +16,7 @@
                         Episode {{ episode.number }} : {{ episode.title }}</br>
 
                         <p>Synopsis de l'épisode : {{ episode.synopsis }}</p>
-                        <a href="{{ path('program_episode_show', {program_id: program.id, season_id: season.id, episode_id: episode.id})}}">Voir l'épisode</a>
+                        <a href="{{ path('program_episode_show', {program_slug: program.slug, season_slug: season.slug, episode_id: episode.id})}}">Voir l'épisode</a>
                     </li>
                 {% endfor %}
             </ul>

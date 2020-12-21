@@ -7,7 +7,7 @@
         <div>
             <h2>{{ program.title }} - Catégorie : {{ program.category.name }}</h2>
             <p>{{ program.summary }}</p>
-            <a href="{{ path("program_show", { program_id: program.id }) }}">Voir la fiche</a>
+            <a href="{{ path("program_show", { program_slug : program.slug }) }}">Voir la fiche</a>
         </div>
         </body>
     {% else %}
